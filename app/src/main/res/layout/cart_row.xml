@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="340dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/singleCatProductTitle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#673AB7"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/singleCatProductImg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/img"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="129dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="#9F6FF2"
+        >
+
+        <TextView
+            android:id="@+id/singleCatProductPrice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="$200" />
+
+        <Button
+            android:id="@+id/singleCatProductBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Detail" />
+    </LinearLayout>
+
+
+</LinearLayout>

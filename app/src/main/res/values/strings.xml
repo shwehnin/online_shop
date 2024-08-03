@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">online_shop</string>
+    <string name="login">Login</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="txtNotMember">Not a member yet!</string>
+    <string name="not_member">Register Here</string>
+    <string name="username">Username</string>
+    <string name="cart_item">Cart Item</string>
+    <string name="product_upload">Product Upload</string>
+    <string name="category_name">Category Name</string>
+    <string name="cart">Cart</string>
+</resources>

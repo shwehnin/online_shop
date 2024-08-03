@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_alignParentEnd="true"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/cartImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/baseline_shopping_cart_24"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <TextView
+        android:id="@+id/cartCount"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/cart_item_bg"
+        android:padding="3dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="3dp"
+        android:text="0" />
+</RelativeLayout>

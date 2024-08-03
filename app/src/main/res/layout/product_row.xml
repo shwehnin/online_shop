@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="340dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/singleCatProductTitle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="20sp"
+        android:background="#673AB7"
+        android:textColor="#fff"
+       android:gravity="center"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/singleCatProductImg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/img" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="#9F6FF2"
+        >
+    <TextView
+        android:id="@+id/singleCatProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="$200"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_weight="1"
+        />
+        <Button
+            android:id="@+id/singleCatProductBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Detail" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loginAnimationView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="login.json"
+        app:lottie_loop="true" />
+
+    <EditText
+        android:id="@+id/txtEmailLogin"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/enter_email"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/loginAnimationView"
+        app:layout_constraintStart_toStartOf="@+id/loginAnimationView"
+        app:layout_constraintTop_toBottomOf="@+id/loginAnimationView" />
+
+    <EditText
+        android:id="@+id/txtPasswordLogin"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/txtEmailLogin"
+        app:layout_constraintStart_toStartOf="@+id/txtEmailLogin"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailLogin" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="@+id/txtPasswordLogin"
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordLogin" />
+
+    <Button
+        android:id="@+id/btnLoginCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/btnLogin"
+        app:layout_constraintTop_toTopOf="@+id/btnLogin" />
+
+    <TextView
+        android:id="@+id/txtForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/forgot_password"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+    <CheckBox
+        android:id="@+id/chkForgot"
+        android:layout_width="40dp"
+        android:layout_height="28dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/txtForgot"
+        app:layout_constraintStart_toStartOf="@+id/txtPasswordLogin"
+        app:layout_constraintTop_toTopOf="@+id/txtForgot" />
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/txtNotMember"
+        android:textColor="@color/black"
+        android:outlineSpotShadowColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/chkForgot"
+        app:layout_constraintTop_toBottomOf="@+id/chkForgot" />
+
+    <Button
+        android:id="@+id/btnNotMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/not_member"
+        app:layout_constraintBottom_toBottomOf="@+id/txtRegister"
+        app:layout_constraintEnd_toEndOf="@+id/txtForgot"
+        app:layout_constraintTop_toTopOf="@+id/txtRegister" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
